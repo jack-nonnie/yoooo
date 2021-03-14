@@ -1,0 +1,22 @@
+<div>
+  <h1>Products</h1>
+  <button type="button" [routerLink]="/create/">Create</button>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Products</th>
+        <th>Price</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{ p.id }}</td>
+        <td>{{ p.name }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.priority }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
